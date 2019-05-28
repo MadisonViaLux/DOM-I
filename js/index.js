@@ -37,6 +37,33 @@ const siteContent = {
   },
 };
 
+
+const photoLogo = document.querySelector('#logo-img')
+photoEdit.setAttribute('src', siteContent['nav']['img/logo.png'])
+
+
+const photoHeader = document.querySelector('#cta-img')
+photoHeader.setAttribute('src', siteContent['nav']['img/header-img.png'])
+
+
+const photoMiddle = document.querySelector('#middle-img')
+photoMiddle.setAttribute('src', siteContent['nav']['img/mid-page-accent.jpg'])
+
+
+
+
+
+const HeaderFix = Array.from(document.getElementsByName('a'))
+HeaderFix.map(element => HeaderFix.setAttribute(element, siteContent['nav']))
+
+// Array.from(document.getElementsByName('a'))
+
+
+
+
+
+
+
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// let logo = document.getElementById("logo-img");
+// logo.setAttribute('src', siteContent["nav"]["img-src"])
